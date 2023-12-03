@@ -6,7 +6,7 @@ use clap::Parser;
 
 #[derive(Parser, Debug)]
 #[command(name = "Numerologie Rechner")]
-#[command(author = "Bjoern <student1304@arcor.de>")]
+#[command(author = "Bjoern <student1304@vodafonemail.de>")]
 #[command(version = "1.0")]
 #[command(about = "Berechnet Numerologie fuer Klienten", 
     long_about = 
