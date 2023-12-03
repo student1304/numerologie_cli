@@ -3,6 +3,14 @@ name = "numerologie"
 version = "0.9.0"
 edition = "2021"
 authors = ["Bjoern <bjoern@technology-institute.eu>"]
+license = "MIT"
+keywords = ["Numerologie, Birthday"]
+categories = ["command-line-utilities", "algorithms"]
+description = "A command line utility that generates Numerologie based on a birthdate"
+readme = "README.md"
+repository = "https://github.com/student1304/numerologie_cli"
+homepage = "None"
+documentation = "None"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
