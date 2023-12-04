@@ -6,16 +6,25 @@
     <title>Document</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/bulma.min.css" />
+    
     <script type="module" src="js/main.js" defer></script>
   </head>
   <body>
     <section class="section">
-        <div class="container">
-            <div class="title">
-                <h1>Numerologie Rechner</h1>
-                <p class="subtitle">Berechne Numerologie aus Geburtsdatum</p>
+        <div class="level">
+            <div class="level-item">
+                <div class="title">
+                    <h1>Numerologie Rechner</h1>
+                    <p class="subtitle">Berechne Numerologie aus Geburtsdatum</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <figure class="image is-96x96">
+                    <img class="is-rounded" src="img/num.png" alt="Numerologie">
+                </figure>
             </div>
         </div>
+       
     </section>
     <section class="section">
         <div class="columns">
@@ -29,20 +38,56 @@
                 <input id="year" class="input is-rounded" type="text" placeholder="Year (YYYY)">
             </div>
         </div>
-        <div class="columns">
-            <div class="column is-full">
-                <button id="calculate" class="button is-info">Calculate</button>
-            </div>
+        <div class="container">
+            <button id="calculate" class="button is-info is-rounded">Calculate</button>
+            <button id="clear" class="button is-secondary is-rounded">Reset</button>
         </div>
-
+        
+        
         <hr>
-
-        <div class="columns">
-            <div class="column" id="result">Result here ...</div>
-        </div>
-    </section>
-
+        
+        <table class="table" id="resultTable">
+            <thead>
+                <tr>
+                    <th>Ergebnisse</th>
+                    <th>Eins</th>
+                    <th>Zwei</th>
+                    <th>Drei</th>
+                    <th>Vier</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Stärken (1-4)</td>
+                    <td id="resEins"></td>
+                    <td id="resZwei"></td>
+                    <td id="resDrei"></td>
+                    <td id="resVier"></td>
+                </tr>
+                <tr>
+                    <th>Entwicklung (Mitte)</th>
+                    <td id="resMitte"></td>
+                </tr>
+                <tr>
+                    <th>Ergebnisse</th>
+                    <th>Fünf</th>
+                    <th>Sechs</th>
+                    <th>Sieben</th>
+                    <th>Acht</th>
+                </tr>
+                <tr>
+                    <td>Herausforderungen (5-8)</td>
+                    <td id="resFuenf"></td>
+                    <td id="resSechs"></td>
+                    <td id="resSieben"></td>
+                    <td id="resAcht"></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
     
-
-  </body>
+</section>
+    
+</body>
 </html>

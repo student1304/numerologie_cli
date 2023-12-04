@@ -7,5 +7,5 @@ Download Binary Relase or build locally with `cargo`
 `./numerologie DD MM YYYY`
 
 ### Contribute
-- [ ] Add a GUI
+- [x] Add a GUI -> branch "gui"
 - [ ] Save results to a file or DB
