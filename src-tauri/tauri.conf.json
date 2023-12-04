@@ -1,0 +1,89 @@
+{
+  "build": {
+    "beforeBuildCommand": "",
+    "beforeDevCommand": "",
+    "devPath": "../ui",
+    "distDir": "../ui",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "Numerologie",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "cli": {
+      "description": "Numerologie Rechner",
+      "longDescription": "Berechne Numerologie auf Basis des Geburtstags",
+      "beforeHelp": "",
+      "afterHelp": "",
+      "args": [
+        {
+          "name": "day",
+          "index": 1,
+          "takesValue": true
+        },
+        {
+          "name": "month",
+          "index": 2,
+          "takesValue": true
+         },
+         {
+          "name": "year",
+          "index": 3,
+          "takesValue": true
+         }
+      ]
+    },
+    "allowlist": {
+      "all": false
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "copyright": "",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "com.tauri.numerologie",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 600,
+        "resizable": true,
+        "title": "Numerologie Rechner",
+        "width": 800
+      }
+    ]
+  }
+}

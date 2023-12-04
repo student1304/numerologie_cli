@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body>
+    <section class="section">
+        <div class="container">
+            <div class="title">
+                <h1>Numerologie Rechner</h1>
+                <p class="subtitle">Berechne Numerologie aus Geburtsdatum</p>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="columns">
+            <div class="column">
+                <input id="day" class="input is-rounded" type="text" placeholder="Day (DD)">
+            </div>
+            <div class="column">
+                <input id="month" class="input is-rounded" type="text" placeholder="Month (MM)">
+            </div>
+            <div class="column">
+                <input id="year" class="input is-rounded" type="text" placeholder="Year (YYYY)">
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-full">
+                <button id="calculate" class="button is-info">Calculate</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="columns">
+            <div class="column" id="result">Result here ...</div>
+        </div>
+    </section>
+
+    
+
+  </body>
+</html>
